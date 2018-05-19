@@ -81,6 +81,7 @@ def calculate_gains_strategies(data_points, strategies)
 
   data_points.each_index do |i|
     date = data_points[i][:date]
+    puts "-" * 50
     puts "Date: #{date}"
     previous_data_point = i == 0 ? data_points[0] : data_points[i-1]
     current_data_point = data_points[i]
@@ -94,8 +95,6 @@ def calculate_gains_strategies(data_points, strategies)
       strategy_results[strat_name][i] = calculate_gain(previous_data_point, current_data_point, previous_gains, new_investment)
       puts "#{strat_name} Current gains #{strategy_results[strat_name][i]}\n\n"
     end
-
-    puts "\n\n"
   end
 
   return strategy_results
