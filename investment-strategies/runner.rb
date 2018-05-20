@@ -12,7 +12,7 @@ $OPTIONS = {}
 
 def parse_options
   OptionParser.new do |opts|
-    opts.banner = "Usage: frontload-vs-average.rb [options]"
+    opts.banner = "Usage: runner.rb [options]"
 
     opts.on("-s", "--start [INDEX]", Integer, "start index of csv file") do |v|
       $OPTIONS[:start_index] = v
