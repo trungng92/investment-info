@@ -7,13 +7,16 @@
 
 MONTHS_PER_YEAR = 12
 
-# Calculates a single gain from one data point to another
-def calculate_gain(previous_data_point, current_data_point, previous_gains, new_investment)
+def calculate_ratio_increase(previous_data_point, current_data_point)
   previous_close = previous_data_point[:close]
   current_close = current_data_point[:close]
   change_ratio = current_close / previous_close
   puts "Close: #{previous_close} -> #{current_close}; Ratio #{change_ratio}"
+  return change_ratio
+end
 
+# Calculates a single gain from one data point to another
+def calculate_gain(change_ratio, previous_gains, new_investment)
   return (previous_gains + new_investment) * change_ratio
 end
 
@@ -68,15 +71,19 @@ def calculate_gains_strategies(data_points, strategies)
     previous_data_point = i == 0 ? data_points[0] : data_points[i-1]
     current_data_point = data_points[i]
 
+    change_ratio = calculate_ratio_increase(previous_data_point, current_data_point)
+    puts
+
     strategies_copy.each do |strat_name, strat_array|
       previous_gains = i == 0 ? 0 : strategy_results[strat_name][i - 1]
       puts "'#{strat_name}' previous gains: #{previous_gains}"
 
       new_investment = strat_array[i]
       puts "'#{strat_name}' new investment: #{new_investment}"
-      strategy_results[strat_name][i] = calculate_gain(previous_data_point, current_data_point, previous_gains, new_investment)
+      strategy_results[strat_name][i] = calculate_gain(change_ratio, previous_gains, new_investment)
       puts "'#{strat_name}' current gains #{strategy_results[strat_name][i]}\n\n"
     end
+    puts
   end
 
   return strategy_results
