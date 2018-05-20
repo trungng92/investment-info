@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
 # Checks the difference between frontloading vs averaging
 
-require_relative 'sp500-csv'
 
 require 'optparse'
 
-require_relative 'sp500-csv'
+require_relative 'data-points-reader'
 require_relative 'strategy-investment-calculator'
 
 $OPTIONS = {}
