@@ -70,12 +70,12 @@ def calculate_gains_strategies(data_points, strategies)
 
     strategies_copy.each do |strat_name, strat_array|
       previous_gains = i == 0 ? 0 : strategy_results[strat_name][i - 1]
-      puts "#{strat_name} Previous gains: #{previous_gains}"
+      puts "'#{strat_name}' previous gains: #{previous_gains}"
 
       new_investment = strat_array[i]
-      puts "#{strat_name} New investment: #{new_investment}"
+      puts "'#{strat_name}' new investment: #{new_investment}"
       strategy_results[strat_name][i] = calculate_gain(previous_data_point, current_data_point, previous_gains, new_investment)
-      puts "#{strat_name} Current gains #{strategy_results[strat_name][i]}\n\n"
+      puts "'#{strat_name}' current gains #{strategy_results[strat_name][i]}\n\n"
     end
   end
 
