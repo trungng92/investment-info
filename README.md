@@ -27,3 +27,18 @@ A few noteworthy items:
 
 - By maxing out your 401k and Roth IRA, you will have $1,000,000 in 17 years.
 - Assuming you max your contributions, at 20 years, your investment returns will gain almost $100,000 a year on its own.
+
+## What is the best way to invest your money?
+
+I believe in the words of [Jack Bogle](https://en.wikipedia.org/wiki/John_C._Bogle).
+
+Basically, don't invest in individual stocks/markets, invest in the market as a whole, and time in the market is more important than timing the market.
+
+## Is it better to frontload your investments or average it out?
+
+When investing in the market, the two generally suggested strategies are:
+
+- averaging (which means if you're going to invest $12,000 a year, then you invest $1,000 a month and spread out your investment over the whole year)
+- frontloading (which means if you're going to invest $12,000 a year, then you put all $12,000 in at the beginning of the year)
+
+The [`investment-strategies`](investment-strategies/README.md) is a tool to test various investment strategies and see their theoretical gain.
