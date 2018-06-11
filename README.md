@@ -9,6 +9,32 @@ For example:
 - investment agencies vs index funds
 - the benefits of frontloading vs monthly contributions
 
+## How do (progressive) tax calculations work?
+
+Many people get confused by our tax system, and think that you pay a flat percentage of your current amount. This is _not_ how our tax system works.
+
+Instead, we have something known as a "Progressive Tax System". In a Progressive Tax "[the tax rate increases as the taxable amount increases](https://en.wikipedia.org/wiki/Progressive_tax)"
+
+So what does this mean? It means that your income is split up into different brackets, and each bracket is taxed at a different rate. This means that _no matter what_, by making more money, you _never_ pay more taxes. For example, if you made $50,000, and the tax brackets were set up as:
+
+```
+Tax % | Tax Bracket
+0%    | $10,000
+10%   | $20,000
+20%   | $40,000
+30%   | $70,000
+```
+
+You pay:
+- 0% taxes on the first $10,000 for a total of $0 ($10,000 * 0%)
+- 10% taxes on your income between the second bracket ($20,000 - $10000) for a total of $2,000 ($10,000 * 10%)
+- 20% taxes on your income between the third bracket ($40,000 - $20000) for a total of $4,000 ($20,000 * 20%)
+- 30% taxes on your income between the fourth bracket, making a note that your total income this year was $50,000, ($50,000 - $40,000) for a total of $3,000 ($10,000 * 30%)
+
+So your total taxes would be $9,000 ($0 + $2,000 + $4,000 + $3,000). And your effective tax rate would be 18% ($9,000 / $50,000).
+
+Some interesting notes: Our taxes are the lowest they've been for a very long time. In fact, till 1981, the top bracket actually used to pay 69.125% income tax, whereas the current top bracket is taxed at 37%. And the highest income tax percentage was [94%](https://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Income_tax_rates_in_history) in 1944, during World War II.
+
 ## How much money does a 401k build up?
 
 When calculating 401k returns, the important thing to consider is that the market grows 9% a year (which is 7% after taking inflation into account), so any money you invest now doubles in 10 years:
