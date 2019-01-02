@@ -15,7 +15,7 @@ Many people get confused by our tax system, and think that you pay a flat percen
 
 Instead, we have something known as a "Progressive Tax System". In a Progressive Tax "[the tax rate increases as the taxable amount increases](https://en.wikipedia.org/wiki/Progressive_tax)"
 
-So what does this mean? It means that your income is split up into different brackets, and each bracket is taxed at a different rate. This means that _no matter what_, by making more money, you _never_ pay more taxes. For example, if you made $50,000, and the tax brackets were set up as:
+So what does this mean? It means that your income is split up into different brackets, and each bracket is taxed at a different rate. This means that _no matter what_, it is always beneficial to make more money. For example, if you made $50,000, and the tax brackets were set up as:
 
 ```
 Tax % | Tax Bracket
@@ -37,13 +37,13 @@ Some interesting notes: Our taxes are the lowest they've been for a very long ti
 
 ## How much money does a 401k build up?
 
-When calculating 401k returns, the important thing to consider is that the market grows 9% a year (which is 7% after taking inflation into account), so any money you invest now doubles in 10 years:
+When calculating 401k returns, the important thing to consider is that for the past 150 years, the market grows on average 9% a year (which is 7% after taking inflation into account), so any money you invest now doubles in 10 years:
 
 ```
 Growth rate: 1.07 ^ 10 == 1.96715135729
 ```
 
-So if you put in $100 now, you will have $200 in 10 years, $400 in 20 years, etc. This may not seem like much, but as you constantly invest more money, your investment fund will snowball.
+So if you put in $100 now, you will have $200 in 10 years, $400 in 20 years, $800 in 30 years, etc. This may not seem like much, but as you constantly invest more money, your investment fund will snowball.
 
 This is a spreadsheet that shows how much money a 401k account (and match contributions) + Roth IRA account accumulates over the course of 20 years.
 
